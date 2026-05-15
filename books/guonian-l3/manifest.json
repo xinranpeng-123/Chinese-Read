@@ -1,0 +1,248 @@
+{
+  "id": "guonian-l3",
+  "title": "过年",
+  "level": "L3",
+  "type": "folk_story",
+  "version": "0.3",
+  "pages": [
+    {
+      "id": "cover",
+      "type": "cover",
+      "ratio": "4:5",
+      "background": "images/cover-bg.png",
+      "textBlocks": [
+        {
+          "id": "title",
+          "text": "过年",
+          "x": 20,
+          "y": 11,
+          "w": 30,
+          "className": "cover-title",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-01",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-01-bg.png",
+      "textBlocks": [
+        {
+          "id": "s1",
+          "text": "山那边，有一种怪兽叫“年”。",
+          "x": 57,
+          "y": 21,
+          "w": 35,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s2",
+          "text": "冬天快结束的时候，年就醒了。",
+          "x": 57,
+          "y": 34,
+          "w": 35,
+          "className": "story-text",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-02",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-02-bg.png",
+      "textBlocks": [
+        {
+          "id": "s1",
+          "text": "年下山了。",
+          "x": 61,
+          "y": 18,
+          "w": 31,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s2",
+          "text": "村子里的人都关上门。",
+          "x": 61,
+          "y": 30,
+          "w": 31,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s3",
+          "text": "安安和宁宁躲在奶奶身后，偷偷往外看。",
+          "x": 61,
+          "y": 42,
+          "w": 31,
+          "className": "story-text",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-03",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-03-bg.png",
+      "textBlocks": [
+        {
+          "id": "s1",
+          "text": "奶奶说：“年怕红色，也怕响。”",
+          "x": 56,
+          "y": 18,
+          "w": 36,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s2",
+          "text": "爸爸点响了鞭炮，噼里啪啦！",
+          "x": 56,
+          "y": 31,
+          "w": 36,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s3",
+          "text": "年吓了一大跳，转身就跑。",
+          "x": 56,
+          "y": 44,
+          "w": 36,
+          "className": "story-text",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-04",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-04-bg.png",
+      "textBlocks": [
+        {
+          "id": "s1",
+          "text": "天亮了，雪地上有一串大脚印。",
+          "x": 9,
+          "y": 16,
+          "w": 32,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s2",
+          "text": "大家一起吃饭，屋里暖暖的。",
+          "x": 9,
+          "y": 29,
+          "w": 32,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "s3",
+          "text": "从那以后，这一天就叫“过年”。",
+          "x": 9,
+          "y": 42,
+          "w": 32,
+          "className": "story-text",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "literacy-target",
+      "type": "literacy",
+      "ratio": "4:5",
+      "background": "images/literacy-bg.png",
+      "title": "本集识字目标",
+      "textBlocks": [
+        {
+          "id": "char-year",
+          "char": "年",
+          "pinyin": "nián",
+          "text": "年",
+          "x": 22,
+          "y": 28,
+          "w": 20,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-red",
+          "char": "红",
+          "pinyin": "hóng",
+          "text": "红",
+          "x": 58,
+          "y": 28,
+          "w": 20,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-mountain",
+          "char": "山",
+          "pinyin": "shān",
+          "text": "山",
+          "x": 22,
+          "y": 48,
+          "w": 20,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-nai",
+          "char": "奶",
+          "pinyin": "nǎi",
+          "text": "奶",
+          "x": 58,
+          "y": 48,
+          "w": 20,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-lamp",
+          "char": "灯",
+          "pinyin": "dēng",
+          "text": "灯",
+          "x": 40,
+          "y": 68,
+          "w": 20,
+          "className": "target-char",
+          "audio": ""
+        }
+      ]
+    }
+  ],
+  "literacyTargets": [
+    {
+      "char": "年",
+      "pinyin": "nián",
+      "audio": ""
+    },
+    {
+      "char": "红",
+      "pinyin": "hóng",
+      "audio": ""
+    },
+    {
+      "char": "山",
+      "pinyin": "shān",
+      "audio": ""
+    },
+    {
+      "char": "奶",
+      "pinyin": "nǎi",
+      "audio": ""
+    },
+    {
+      "char": "灯",
+      "pinyin": "dēng",
+      "audio": ""
+    }
+  ]
+}

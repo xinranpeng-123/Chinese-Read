@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>童阅星球｜中文分级绘本</title>
+<style>
+:root{--bg:#f7f1e6;--card:#fffaf2;--ink:#2f241b;--muted:#7b6a5a;--accent:#9b4f32;--line:#eadcc9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.page{max-width:1120px;margin:0 auto;padding:40px 20px 56px}
+header{margin-bottom:32px}
+h1{margin:0 0 10px;font-size:clamp(36px,6vw,64px);letter-spacing:.04em}
+.intro{margin:0;color:var(--muted);font-size:clamp(16px,2.2vw,20px);line-height:1.7}
+.section-title{margin:0 0 16px;font-size:24px}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+.book{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 30px rgba(70,45,25,.12);transition:transform .16s ease,box-shadow .16s ease}
+.book:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(70,45,25,.16)}
+.book img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#eadcc9}
+.book-info{padding:15px 16px 18px}
+.book-title{margin:0 0 6px;font-size:24px;font-weight:850}
+.book-meta{margin:0 0 12px;color:var(--muted);font-size:14px}
+.button{display:inline-block;padding:7px 13px;border-radius:999px;background:var(--accent);color:white;font-size:14px;font-weight:800}
+footer{margin-top:42px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<h1>童阅星球</h1>
+<p class="intro">海外儿童中文分级绘本。先从一小本开始。</p>
+</header>
+<main>
+<h2 class="section-title">绘本书架</h2>
+<section class="shelf">
+<a class="book" href="books/guonian-l3/">
+<img src="books/guonian-l3/images/cover-bg.png" alt="《过年》封面">
+<div class="book-info">
+<h3 class="book-title">过年</h3>
+<p class="book-meta">L3｜民俗故事｜春节</p>
+<span class="button">开始阅读</span>
+</div>
+</a>
+</section>
+</main>
+<footer>© 童阅星球</footer>
+</div>
+</body>
+</html>
