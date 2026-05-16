@@ -3,7 +3,7 @@
   "title": "过年",
   "level": "L3",
   "type": "folk_story",
-  "version": "1.0",
+  "version": "clean-1.0",
   "pages": [
     {
       "id": "cover",
@@ -14,8 +14,8 @@
         {
           "id": "title",
           "text": "过年",
-          "x": 20,
-          "y": 11,
+          "x": 25,
+          "y": 20,
           "w": 30,
           "className": "cover-title",
           "audio": ""
@@ -127,27 +127,27 @@
         {
           "id": "s1",
           "text": "天亮了，雪地上有一串大脚印。",
-          "x": 7,
+          "x": 65,
           "y": 13,
-          "w": 34,
+          "w": 30,
           "className": "story-text",
           "audio": ""
         },
         {
           "id": "s2",
           "text": "大家一起吃饭，屋里暖暖的。",
-          "x": 7,
+          "x": 65,
           "y": 27,
-          "w": 34,
+          "w": 30,
           "className": "story-text",
           "audio": ""
         },
         {
           "id": "s3",
           "text": "从那以后，这一天就叫“过年”。",
-          "x": 7,
+          "x": 65,
           "y": 41,
-          "w": 34,
+          "w": 30,
           "className": "story-text",
           "audio": ""
         }

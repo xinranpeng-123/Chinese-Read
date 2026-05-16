@@ -21,31 +21,31 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .book-page.spread{width:min(96vw,1180px);aspect-ratio:8/5}
 .page-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .text-block{position:absolute;width:var(--w);left:var(--x);top:var(--y);color:var(--ink);font-family:"Source Han Serif SC","Noto Serif SC","STSong","Songti SC","SimSun",serif;font-size:clamp(10px,2.55cqw,32px);line-height:1.48;letter-spacing:.01em;text-shadow:0 1px 0 rgba(255,255,255,.72),0 0 8px rgba(255,247,232,.78);cursor:pointer;user-select:text;padding:.1em .18em;border-radius:10px}
-.cover-title{font-family:"STKaiti","Kaiti SC","DFKai-SB","KaiTi","Source Han Serif SC","Noto Serif SC",serif!important;font-size:clamp(34px,10cqw,96px)!important;font-weight:700;letter-spacing:.22em;text-align:center;color:#642a1a;text-shadow:0 1px 0 rgba(255,246,230,.78),0 0 10px rgba(255,250,243,.9)}
+.cover-title{font-family:"STKaiti","Kaiti SC","DFKai-SB","KaiTi","Source Han Serif SC","Noto Serif SC",serif!important;font-size:clamp(42px,12cqw,116px)!important;font-weight:700;letter-spacing:.22em;text-align:center;color:#642a1a;text-shadow:0 1px 0 rgba(255,246,230,.78),0 0 10px rgba(255,250,243,.9)}
 .text-block:hover,.text-block.active{background:rgba(255,245,205,.42);outline:2px solid rgba(139,90,60,.18)}
 .literacy-title{position:absolute;left:0;top:10.5%;width:100%;text-align:center;color:#642a1a;font-family:"STKaiti","Kaiti SC","DFKai-SB","KaiTi","Source Han Serif SC","Noto Serif SC",serif;font-size:clamp(22px,6cqw,56px);font-weight:700;letter-spacing:.1em}
 .target-char{text-align:center;font-family:"Source Han Serif SC","Noto Serif SC","Songti SC","SimSun",serif}
 .target-char .pinyin{display:block;font-size:clamp(12px,3.6cqw,30px);color:var(--muted);margin-bottom:.22em;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
 .target-char .hanzi{display:block;font-size:clamp(36px,11cqw,98px);line-height:1.05;font-weight:800}
 .page-indicator{color:var(--muted);font-size:14px}
-@media (max-width:700px) and (orientation:portrait){
-  header h1{font-size:16px}
-  button{padding:8px 12px;font-size:13px}
-}
+.loading,.error{padding:24px;color:var(--muted)}
+@media (max-width:700px) and (orientation:portrait){header h1{font-size:16px}button{padding:8px 12px;font-size:13px}}
 </style>
 </head>
 <body>
 <div class="app">
-<header><h1 id="bookTitle"></h1><div class="toolbar"><button id="prevBtn" class="secondary">上一页</button><span id="pageIndicator" class="page-indicator"></span><button id="nextBtn">下一页</button></div></header>
-<main class="stage"><section id="bookPage" class="book-page"></section></main>
+<header><h1 id="bookTitle">过年｜L3</h1><div class="toolbar"><button id="prevBtn" class="secondary">上一页</button><span id="pageIndicator" class="page-indicator"></span><button id="nextBtn">下一页</button></div></header>
+<main class="stage"><section id="bookPage" class="book-page"><div class="loading">正在加载绘本……</div></section></main>
 </div>
 <script>
-const BOOK={"id": "guonian-l3", "title": "过年", "level": "L3", "type": "folk_story", "version": "1.0", "pages": [{"id": "cover", "type": "cover", "ratio": "4:5", "background": "images/cover-bg.png", "textBlocks": [{"id": "title", "text": "过年", "x": 20, "y": 11, "w": 30, "className": "cover-title", "audio": ""}]}, {"id": "spread-01", "type": "spread", "ratio": "8:5", "background": "images/spread-01-bg.png", "textBlocks": [{"id": "s1", "text": "山那边，有一种怪兽叫“年”。", "x": 57, "y": 21, "w": 35, "className": "story-text", "audio": ""}, {"id": "s2", "text": "冬天快结束的时候，年就醒了。", "x": 57, "y": 34, "w": 35, "className": "story-text", "audio": ""}]}, {"id": "spread-02", "type": "spread", "ratio": "8:5", "background": "images/spread-02-bg.png", "textBlocks": [{"id": "s1", "text": "年下山了。", "x": 61, "y": 18, "w": 31, "className": "story-text", "audio": ""}, {"id": "s2", "text": "村子里的人都关上门。", "x": 61, "y": 30, "w": 31, "className": "story-text", "audio": ""}, {"id": "s3", "text": "安安和宁宁躲在奶奶身后，偷偷往外看。", "x": 61, "y": 42, "w": 31, "className": "story-text", "audio": ""}]}, {"id": "spread-03", "type": "spread", "ratio": "8:5", "background": "images/spread-03-bg.png", "textBlocks": [{"id": "s1", "text": "奶奶说：“年怕红色，也怕响。”", "x": 56, "y": 18, "w": 36, "className": "story-text", "audio": ""}, {"id": "s2", "text": "爸爸点响了鞭炮，噼里啪啦！", "x": 56, "y": 31, "w": 36, "className": "story-text", "audio": ""}, {"id": "s3", "text": "年吓了一大跳，转身就跑。", "x": 56, "y": 44, "w": 36, "className": "story-text", "audio": ""}]}, {"id": "spread-04", "type": "spread", "ratio": "8:5", "background": "images/spread-04-bg.png", "textBlocks": [{"id": "s1", "text": "天亮了，雪地上有一串大脚印。", "x": 7, "y": 13, "w": 34, "className": "story-text", "audio": ""}, {"id": "s2", "text": "大家一起吃饭，屋里暖暖的。", "x": 7, "y": 27, "w": 34, "className": "story-text", "audio": ""}, {"id": "s3", "text": "从那以后，这一天就叫“过年”。", "x": 7, "y": 41, "w": 34, "className": "story-text", "audio": ""}]}, {"id": "literacy-target", "type": "literacy", "ratio": "4:5", "background": "images/literacy-bg.png", "title": "本集识字目标", "textBlocks": [{"id": "char-year", "char": "年", "pinyin": "nián", "text": "年", "x": 22, "y": 28, "w": 20, "className": "target-char", "audio": ""}, {"id": "char-red", "char": "红", "pinyin": "hóng", "text": "红", "x": 58, "y": 28, "w": 20, "className": "target-char", "audio": ""}, {"id": "char-mountain", "char": "山", "pinyin": "shān", "text": "山", "x": 22, "y": 48, "w": 20, "className": "target-char", "audio": ""}, {"id": "char-nai", "char": "奶", "pinyin": "nǎi", "text": "奶", "x": 58, "y": 48, "w": 20, "className": "target-char", "audio": ""}, {"id": "char-lamp", "char": "灯", "pinyin": "dēng", "text": "灯", "x": 40, "y": 68, "w": 20, "className": "target-char", "audio": ""}]}], "literacyTargets": [{"char": "年", "pinyin": "nián", "audio": ""}, {"char": "红", "pinyin": "hóng", "audio": ""}, {"char": "山", "pinyin": "shān", "audio": ""}, {"char": "奶", "pinyin": "nǎi", "audio": ""}, {"char": "灯", "pinyin": "dēng", "audio": ""}]};
-let currentIndex=0,currentAudio=null;
+let BOOK=null,currentIndex=0,currentAudio=null;
 const bookTitle=document.getElementById("bookTitle"),pageEl=document.getElementById("bookPage"),indicator=document.getElementById("pageIndicator"),prevBtn=document.getElementById("prevBtn"),nextBtn=document.getElementById("nextBtn");
-bookTitle.textContent=`${BOOK.title}｜${BOOK.level}`;
+async function init(){
+  try{const res=await fetch("data/pages.json");if(!res.ok)throw new Error("无法读取 data/pages.json");BOOK=await res.json();bookTitle.textContent=`${BOOK.title}｜${BOOK.level}`;renderPage();}
+  catch(err){pageEl.className="book-page spread";pageEl.innerHTML=`<div class="error">绘本数据加载失败：${escapeHtml(err.message)}<br>请确认 data/pages.json 已上传，并通过网站地址访问。</div>`;}
+}
 prevBtn.onclick=()=>{if(currentIndex>0){currentIndex--;renderPage()}};
-nextBtn.onclick=()=>{if(currentIndex<BOOK.pages.length-1){currentIndex++;renderPage()}};
+nextBtn.onclick=()=>{if(BOOK&&currentIndex<BOOK.pages.length-1){currentIndex++;renderPage()}};
 document.addEventListener("keydown",e=>{if(e.key==="ArrowLeft")prevBtn.click();if(e.key==="ArrowRight")nextBtn.click()});
 function renderPage(){
  const page=BOOK.pages[currentIndex];
@@ -61,17 +61,17 @@ function renderPage(){
 function renderBlock(b,page){
  const style=`--x:${b.x}%;--y:${b.y}%;--w:${b.w}%;`;
  if(page.type==="literacy")return `<div class="text-block target-char" style="${style}" data-audio="${b.audio||""}" data-audio-text="${b.char}"><span class="pinyin">${b.pinyin}</span><span class="hanzi">${b.char}</span></div>`;
- return `<div class="text-block ${b.className||""}" style="${style}" data-audio="${b.audio||""}" data-audio-text="${esc(b.text)}">${esc(b.text)}</div>`;
+ return `<div class="text-block ${b.className||""}" style="${style}" data-audio="${b.audio||""}" data-audio-text="${escapeHtml(b.text)}">${escapeHtml(b.text)}</div>`;
 }
 function readText(el){
  document.querySelectorAll(".text-block.active").forEach(x=>x.classList.remove("active"));el.classList.add("active");
  const src=el.dataset.audio,text=el.dataset.audioText;
- if(currentAudio){currentAudio.pause();currentAudio=null}; if(window.speechSynthesis)speechSynthesis.cancel();
+ if(currentAudio){currentAudio.pause();currentAudio=null} if(window.speechSynthesis)speechSynthesis.cancel();
  if(src){currentAudio=new Audio(src);currentAudio.play();return}
  if(window.speechSynthesis&&text){const u=new SpeechSynthesisUtterance(text);u.lang="zh-CN";u.rate=.82;speechSynthesis.speak(u)}
 }
-function esc(v){return String(v).replace(/[&<>'"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]))}
-renderPage();
+function escapeHtml(v){return String(v).replace(/[&<>'"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]))}
+init();
 </script>
 </body>
 </html>
