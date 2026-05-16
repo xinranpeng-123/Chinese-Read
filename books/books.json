@@ -1,0 +1,18 @@
+[
+  {
+    "title": "过年",
+    "level": "L3",
+    "type": "民俗故事",
+    "theme": "春节",
+    "cover": "books/guonian-l3/images/cover-bg.png",
+    "url": "books/guonian-l3/"
+  },
+  {
+    "title": "面包",
+    "level": "L1",
+    "type": "认知识字",
+    "theme": "大小",
+    "cover": "books/mianbao-l1/images/cover-bg.png",
+    "url": "books/mianbao-l1/"
+  }
+]
