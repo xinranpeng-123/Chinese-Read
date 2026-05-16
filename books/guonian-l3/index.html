@@ -35,7 +35,46 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .page-indicator{color:var(--muted);font-size:14px;min-width:46px;text-align:center}
 .loading,.error{padding:24px;color:var(--muted)}
 .hidden{display:none!important}
-@media (max-width:760px){header{grid-template-columns:1fr;justify-items:center}header h1{font-size:16px}.nav-left,.toolbar{justify-content:center}a.nav-button,button{padding:8px 12px;font-size:13px}}
+@media (max-width:760px){
+  header{
+    grid-template-columns:1fr auto;
+    grid-template-areas:
+      "left toolbar"
+      "title title";
+    align-items:center;
+    gap:8px;
+    padding:10px 12px;
+  }
+
+  .nav-left{
+    grid-area:left;
+    justify-content:flex-start;
+  }
+
+  .toolbar{
+    grid-area:toolbar;
+    justify-content:flex-end;
+  }
+
+  header h1{
+    grid-area:title;
+    font-size:16px;
+    text-align:center;
+    width:100%;
+    margin-top:2px;
+  }
+
+  a.nav-button,
+  button{
+    padding:7px 10px;
+    font-size:13px;
+  }
+
+  .page-indicator{
+    font-size:13px;
+    min-width:38px;
+  }
+}
 </style>
 </head>
 <body>
