@@ -1,0 +1,8 @@
+{
+  "id": "mianbao-l1",
+  "title": "面包",
+  "level": "L1",
+  "type": "cognition",
+  "entry": "index.html",
+  "data": "data/pages.json"
+}

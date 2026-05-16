@@ -1,0 +1,147 @@
+{
+  "id": "mianbao-l1",
+  "title": "面包",
+  "level": "L1",
+  "type": "cognition",
+  "theme": "大小认知",
+  "version": "clean-1.1",
+  "pages": [
+    {
+      "id": "cover",
+      "type": "cover",
+      "ratio": "4:5",
+      "background": "images/cover-bg.png",
+      "textBlocks": [
+        {
+          "id": "title",
+          "text": "面包",
+          "x": 35,
+          "y": 10,
+          "w": 30,
+          "className": "cover-title",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-01",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-01-bg.png",
+      "textBlocks": [
+        {
+          "id": "big",
+          "text": "大",
+          "x": 12,
+          "y": 14,
+          "w": 12,
+          "className": "size-large",
+          "audio": ""
+        },
+        {
+          "id": "mid",
+          "text": "中",
+          "x": 58,
+          "y": 17,
+          "w": 12,
+          "className": "size-medium",
+          "audio": ""
+        },
+        {
+          "id": "small",
+          "text": "小",
+          "x": 82,
+          "y": 20,
+          "w": 10,
+          "className": "size-small",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "spread-02",
+      "type": "spread",
+      "ratio": "8:5",
+      "background": "images/spread-02-bg.png",
+      "textBlocks": [
+        {
+          "id": "line1",
+          "text": "妈妈吃小面包。",
+          "x": 9,
+          "y": 14,
+          "w": 25,
+          "className": "story-text",
+          "audio": ""
+        },
+        {
+          "id": "line2",
+          "text": "安安吃大面包。",
+          "x": 67,
+          "y": 14,
+          "w": 22,
+          "className": "story-text",
+          "audio": ""
+        }
+      ]
+    },
+    {
+      "id": "literacy-target",
+      "type": "literacy",
+      "ratio": "4:5",
+      "background": "images/literacy-bg.png",
+      "title": "本集识字目标",
+      "textBlocks": [
+        {
+          "id": "char-da",
+          "char": "大",
+          "pinyin": "dà",
+          "text": "大",
+          "x": 13,
+          "y": 44,
+          "w": 22,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-zhong",
+          "char": "中",
+          "pinyin": "zhōng",
+          "text": "中",
+          "x": 39,
+          "y": 44,
+          "w": 22,
+          "className": "target-char",
+          "audio": ""
+        },
+        {
+          "id": "char-xiao",
+          "char": "小",
+          "pinyin": "xiǎo",
+          "text": "小",
+          "x": 65,
+          "y": 44,
+          "w": 22,
+          "className": "target-char",
+          "audio": ""
+        }
+      ]
+    }
+  ],
+  "literacyTargets": [
+    {
+      "char": "大",
+      "pinyin": "dà",
+      "audio": ""
+    },
+    {
+      "char": "中",
+      "pinyin": "zhōng",
+      "audio": ""
+    },
+    {
+      "char": "小",
+      "pinyin": "xiǎo",
+      "audio": ""
+    }
+  ]
+}
