@@ -15,8 +15,8 @@
         {
           "id": "title",
           "text": "面包",
-          "x": 35,
-          "y": 10,
+          "x": 40,
+          "y": 13,
           "w": 30,
           "className": "cover-title",
           "audio": ""
@@ -32,8 +32,8 @@
         {
           "id": "big",
           "text": "大",
-          "x": 12,
-          "y": 14,
+          "x": 20,
+          "y": 20,
           "w": 12,
           "className": "size-large",
           "audio": ""
@@ -42,7 +42,7 @@
           "id": "mid",
           "text": "中",
           "x": 58,
-          "y": 17,
+          "y": 37,
           "w": 12,
           "className": "size-medium",
           "audio": ""
@@ -51,7 +51,7 @@
           "id": "small",
           "text": "小",
           "x": 82,
-          "y": 20,
+          "y": 50,
           "w": 10,
           "className": "size-small",
           "audio": ""
@@ -67,8 +67,8 @@
         {
           "id": "line1",
           "text": "妈妈吃小面包。",
-          "x": 9,
-          "y": 14,
+          "x": 29,
+          "y": 44,
           "w": 25,
           "className": "story-text",
           "audio": ""
@@ -78,7 +78,7 @@
           "text": "安安吃大面包。",
           "x": 67,
           "y": 14,
-          "w": 22,
+          "w": 30,
           "className": "story-text",
           "audio": ""
         }
