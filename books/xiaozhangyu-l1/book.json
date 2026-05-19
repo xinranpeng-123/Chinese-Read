@@ -1,89 +1,18 @@
 {
-  "book_title": "会变色的小章鱼",
+  "title": "会变色的小章鱼",
   "level": "L1",
+  "type": "科普认知",
+  "theme": "颜色 / 伪装",
+  "cover": "images/cover-bg.png",
   "pages": [
-    {
-      "type": "cover",
-      "title": "会变色的小章鱼",
-      "img": "assets/cover.png",
-      "text": "会变色的小章鱼",
-      "class": "title cover-title"
-    },
-    {
-      "type": "spread",
-      "title": "灰色的小章鱼",
-      "img": "assets/gray.png",
-      "text": "灰色的小章鱼",
-      "pos": "right top"
-    },
-    {
-      "type": "spread",
-      "title": "绿色的小章鱼",
-      "img": "assets/green.png",
-      "text": "绿色的小章鱼",
-      "pos": "right mid",
-      "color": "#4a6d2f"
-    },
-    {
-      "type": "spread",
-      "title": "红色的小章鱼",
-      "img": "assets/red.png",
-      "text": "红色的小章鱼",
-      "pos": "left mid",
-      "color": "#33415c",
-      "emphasis": "红色"
-    },
-    {
-      "type": "spread",
-      "title": "黄色的小章鱼",
-      "img": "assets/yellow.png",
-      "text": "黄色的小章鱼",
-      "pos": "left mid",
-      "color": "#3b2b22"
-    },
-    {
-      "type": "spread",
-      "title": "大鱼来了。",
-      "img": "assets/fish.png",
-      "text": "大鱼来了。",
-      "pos": "left mid"
-    },
-    {
-      "type": "spread",
-      "title": "大鱼一只小章鱼都找不到！",
-      "img": "assets/hide.png",
-      "text": "大鱼一只\n小章鱼都找不到！",
-      "pos": "center mid"
-    },
-    {
-      "type": "spread",
-      "title": "会变色的小章鱼",
-      "img": "assets/final.png",
-      "text": "会变色的小章鱼",
-      "pos": "top center",
-      "class": "ending"
-    },
-    {
-      "type": "literacy",
-      "title": "认一认",
-      "img": "assets/cover.png",
-      "words": [
-        [
-          "小",
-          "章",
-          "鱼"
-        ],
-        [
-          "灰",
-          "绿",
-          "红",
-          "黄"
-        ],
-        [
-          "大",
-          "色"
-        ]
-      ]
-    }
+    { "type": "cover", "image": "images/cover-bg.png", "text": "会变色的小章鱼" },
+    { "type": "spread", "image": "images/p01-gray.png", "text": "灰色的小章鱼" },
+    { "type": "spread", "image": "images/p02-green.png", "text": "绿色的小章鱼" },
+    { "type": "spread", "image": "images/p03-red.png", "text": "红色的小章鱼" },
+    { "type": "spread", "image": "images/p04-yellow.png", "text": "黄色的小章鱼" },
+    { "type": "spread", "image": "images/p05-fish.png", "text": "大鱼来了。" },
+    { "type": "spread", "image": "images/p06-hide.png", "text": "大鱼一只\n小章鱼都找不到！" },
+    { "type": "spread", "image": "images/p07-final.png", "text": "会变色的小章鱼" },
+    { "type": "literacy", "image": "images/cover-bg.png", "words": [["小","章","鱼"],["灰","绿","红","黄"],["大","色"]] }
   ]
 }
