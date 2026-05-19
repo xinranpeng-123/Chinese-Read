@@ -10,9 +10,17 @@
   {
     "title": "面包",
     "level": "L1",
-    "type": "认知识字",
+    "type": "认知",
     "theme": "大小",
     "cover": "books/mianbao-l1/images/cover-bg.png",
     "url": "books/mianbao-l1/"
+  },
+  {
+    "title": "会变色的小章鱼",
+    "level": "L1",
+    "type": "科普认知",
+    "theme": "颜色 / 伪装",
+    "cover": "books/octopus-color-l1/images/cover-bg.png",
+    "url": "books/octopus-color-l1/"
   }
 ]
